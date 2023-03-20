@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Space Learning</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/8fe482a527.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<img src="header.png" alt="head" class="header-image">
+
+<body class="body">
+
+    <html>
+    <form class="form">
+
+        <div class="first-line div">
+            Please complete the feedback for Student 999999 at 0:00 PM on DD-MM-YYYY
+        </div>
+
+
+
+        <!--------------------------------------Academic Feedback----------------------------------------->
+
+
+        <div class="heading">
+            Academic Feedback
+        </div>
+        <br>
+
+        <div>
+            <label class="label-auto label-background radio">
+                How engaged was the student?
+                <span class="i-icon i-required"> </span>
+            </label>
+            <input type="radio" name="engagement" class="table-rating"> Distracted
+            <input type="radio" name="engagement" class="table-rating"> Disengaged
+            <input type="radio" name="engagement" class="table-rating"> Ready to learn
+            <input type="radio" name="engagement" class="table-rating"> Very focussed
+        </div>
+        <br>
+
+        <div>
+            <label class="label-auto label-background">
+                HOW WOULD YOU RATE THE LO SELECTION?
+                <span class="i-icon i-required"> </span>
+            </label>
+
+            <input type="radio" name="LOrating" class="table-rating"> Good
+            <input type="radio" name="LOrating" class="table-rating"> Too easy
+            <input type="radio" name="LOrating" class="table-rating"> Too difficult
+        </div>
+        <br>
+
+
+        <div class="S2S-marking">
+
+            <div class="LO-numbers">
+                <label class="LO-label-background">
+                    1ST LO TAUGHT
+                </label>
+                <label class="LO-name">
+                    <span> LO Name (E.g. Partitioning in different ways with decimals)</span>
+                </label>
+                <label class="LO-checkbox">
+                    <input type="checkbox" value="tick">
+                    MARK AS COMPLETE
+                </label>
+                <button type="button" class="btn btn-primary btn-delete"
+                    style="--bs-btn-padding-y: .15rem; --bs-btn-padding-x: 1.5rem; --bs-btn-font-size: .75rem;">
+                    Delete
+                </button>
+
+            </div>
+            <br>
+
+            <div>
+
+                <p>1. Concept -</p>
+                <input type="radio" name="S2S1" class="s2s-radio" id="NT" value="Not_taught" checked>
+                <label for="NT">Not taught</label>
+                <input type="radio" name="S2S1" class="s2s-radio" id="NMW" value="Needs_more_work">
+                <label for="NMW">Needs more work</label>
+                <input type="radio" name="S2S1" class="s2s-radio" id="NL" value="New_Concept_Learnt">
+                <label for="NL">New Concept Learnt</label>
+                <input type="radio" name="S2S1" class="s2s-radio" id="RE" value="Reinforced_Knowledge">
+                <label for="RE">Reinforced Existing Knowledge</label>
+                <br>
+
+                <p>2. Practice -</p>
+                <input type="radio" name="S2S2" class="s2s-radio" id="NT" value="Not_taught" checked>
+                <label for="NT">Not taught</label>
+                <input type="radio" name="S2S2" class="s2s-radio" id="NMW" value="Needs_more_work">
+                <label for="NMW">Needs more work</label>
+                <input type="radio" name="S2S2" class="s2s-radio" id="NL" value="New_Concept_Learnt">
+                <label for="NL">New Concept Learnt</label>
+                <input type="radio" name="S2S2" class="s2s-radio" id="RE" value="Reinforced_Knowledge">
+                <label for="RE">Reinforced Existing Knowledge</label>
+                <br>
+
+                <p>3. Application -</p>
+                <input type="radio" name="S2S3" class="s2s-radio" id="NT" value="Not_taught" checked>
+                <label for="NT">Not taught</label>
+                <input type="radio" name="S2S3" class="s2s-radio" id="NMW" value="Needs_more_work">
+                <label for="NMW">Needs more work</label>
+                <input type="radio" name="S2S3" class="s2s-radio" id="NL" value="New_Concept_Learnt">
+                <label for="NL">New Concept Learnt</label>
+                <input type="radio" name="S2S3" class="s2s-radio" id="RE" value="Reinforced_Knowledge">
+                <label for="RE">Reinforced Existing Knowledge</label>
+
+            </div>
+
+            <hr class="first-hr">
+            <div class="faded-button">
+                <span>Lesson state</span>
+
+                <select name="state" id="state" class="lesson_directory_state_field disabled" disabled="disabled">
+                    <option selected="selected" value="1">In progress</option>
+                    <option value="0">Move on</option>
+                </select>
+            </div>
+            <hr class="second-hr">
+
+            <div class="LO-numbers">
+                <label class="LO-label-background">
+                    2ND LO TAUGHT
+                </label>
+                <label class="LO-name">
+                    <span>LO Name (E.g. Writing percentages as fractions and decimals) </span>
+                </label>
+                <label class="LO-checkbox">
+                    <input type="checkbox" value="tick">
+                    MARK AS COMPLETE
+                </label>
+                <button type="button" class="btn btn-primary btn-delete"
+                    style="--bs-btn-padding-y: .15rem; --bs-btn-padding-x: 1.5rem; --bs-btn-font-size: .75rem;">
+                    Delete
+                </button>
+
+            </div>
+            <br>
+
+            <div>
+
+                <p>1. Concept -</p>
+                <input type="radio" name="S2S_1" class="s2s-radio" id="NT" value="Not_taught" checked>
+                <label for="NT">Not taught</label>
+                <input type="radio" name="S2S_1" class="s2s-radio" id="NMW" value="Needs_more_work">
+                <label for="NMW">Needs more work</label>
+                <input type="radio" name="S2S_1" class="s2s-radio" id="NL" value="New_Concept_Learnt">
+                <label for="NL">New Concept Learnt</label>
+                <input type="radio" name="S2S_1" class="s2s-radio" id="RE" value="Reinforced_Knowledge">
+                <label for="RE">Reinforced Existing Knowledge</label>
+                <br>
+
+                <p>2. Practice -</p>
+                <input type="radio" name="S2S_2" class="s2s-radio" id="NT" value="Not_taught" checked>
+                <label for="NT">Not taught</label>
+                <input type="radio" name="S2S_2" class="s2s-radio" id="NMW" value="Needs_more_work">
+                <label for="NMW">Needs more work</label>
+                <input type="radio" name="S2S_2" class="s2s-radio" id="NL" value="New_Concept_Learnt">
+                <label for="NL">New Concept Learnt</label>
+                <input type="radio" name="S2S_2" class="s2s-radio" id="RE" value="Reinforced_Knowledge">
+                <label for="RE">Reinforced Existing Knowledge</label>
+                <br>
+
+                <p>3. Application -</p>
+                <input type="radio" name="S2S_3" class="s2s-radio" id="NT" value="Not_taught" checked>
+                <label for="NT">Not taught</label>
+                <input type="radio" name="S2S_3" class="s2s-radio" id="NMW" value="Needs_more_work">
+                <label for="NMW">Needs more work</label>
+                <input type="radio" name="S2S_3" class="s2s-radio" id="NL" value="New_Concept_Learnt">
+                <label for="NL">New Concept Learnt</label>
+                <input type="radio" name="S2S_3" class="s2s-radio" id="RE" value="Reinforced_Knowledge">
+                <label for="RE">Reinforced Existing Knowledge</label>
+
+            </div>
+
+            <hr class="first-hr">
+            <div class="faded-button">
+                <span>Lesson state</span>
+
+                <select name="state" id="state" class="lesson_directory_state_field disabled" disabled="disabled">
+                    <option selected="selected" value="1">In progress</option>
+                    <option value="0">Move on</option>
+                </select>
+            </div>
+            <hr class="second-hr">
+
+            <div class="LO-numbers">
+                <label class="LO-label-background">
+                    3RD LO TAUGHT
+                </label>
+                <label class="LO-name">
+                    <span>LO Name (E.g. Adding and subtracting using rounding and adjusting) </span>
+                </label>
+                <label class="LO-checkbox">
+                    <input type="checkbox" value="tick">
+                    MARK AS COMPLETE
+                </label>
+                <button type="button" class="btn btn-primary btn-delete"
+                    style="--bs-btn-padding-y: .15rem; --bs-btn-padding-x: 1.5rem; --bs-btn-font-size: .75rem;">
+                    Delete
+                </button>
+            </div>
+            <br>
+
+
+
+            <div>
+
+                <p>1. Concept -</p>
+                <input type="radio" name="S2S-1" class="s2s-radio" id="NT" value="Not_taught" checked>
+                <label for="NT">Not taught</label>
+                <input type="radio" name="S2S-1" class="s2s-radio" id="NMW" value="Needs_more_work">
+                <label for="NMW">Needs more work</label>
+                <input type="radio" name="S2S-1" class="s2s-radio" id="NL" value="New_Concept_Learnt">
+                <label for="NL">New Concept Learnt</label>
+                <input type="radio" name="S2S-1" class="s2s-radio" id="RE" value="Reinforced_Knowledge">
+                <label for="RE">Reinforced Existing Knowledge</label>
+                <br>
+
+                <p>2. Practice -</p>
+                <input type="radio" name="S2S-2" class="s2s-radio" id="NT" value="Not_taught" checked>
+                <label for="NT">Not taught</label>
+                <input type="radio" name="S2S-2" class="s2s-radio" id="NMW" value="Needs_more_work">
+                <label for="NMW">Needs more work</label>
+                <input type="radio" name="S2S-2" class="s2s-radio" id="NL" value="New_Concept_Learnt">
+                <label for="NL">New Concept Learnt</label>
+                <input type="radio" name="S2S-2" class="s2s-radio" id="RE" value="Reinforced_Knowledge">
+                <label for="RE">Reinforced Existing Knowledge</label>
+                <br>
+
+                <p>3. Application -</p>
+                <input type="radio" name="S2S-3" class="s2s-radio" id="NT" value="Not_taught" checked>
+                <label for="NT">Not taught</label>
+                <input type="radio" name="S2S-3" class="s2s-radio" id="NMW" value="Needs_more_work">
+                <label for="NMW">Needs more work</label>
+                <input type="radio" name="S2S-3" class="s2s-radio" id="NL" value="New_Concept_Learnt">
+                <label for="NL">New Concept Learnt</label>
+                <input type="radio" name="S2S-3" class="s2s-radio" id="RE" value="Reinforced_Knowledge">
+                <label for="RE">Reinforced Existing Knowledge</label>
+
+            </div>
+
+            <hr class="first-hr">
+
+            <div class="faded-button">
+                <span>Lesson state</span>
+
+                <select name="state" id="state" class="lesson_directory_state_field disabled" disabled="disabled">
+                    <option selected="selected" value="1">In progress</option>
+                    <option value="0">Move on</option>
+                </select>
+            </div>
+
+        </div>
+
+        <button type="button" class="btn btn-primary second-button"
+            style="--bs-btn-padding-y: .5rem; --bs-btn-padding-x: 1rem; --bs-btn-font-size: 0.8rem;">
+            Add Additional LOs
+        </button>
+
+
+
+        <!--------------------------------------Post session tech report----------------------------------------->
+
+
+
+        <div>
+            <div class="title-feedback">
+                Post session tech report
+            </div>
+            <br>
+
+            <div>
+                <label class="tech-label-background">
+                    AUDIO STATUS
+                </label>
+                <select name="select audio status" class="select-dropdown">
+                    <option class="dropdown-options" value="select audio status"> <em>Select audio status</em></option>
+                    <option class="dropdown-options" value="No audio">No audio</option>
+                    <option class="dropdown-options" value="Tutor can't hear student">Tutor can't hear student </option>
+                    <option class="dropdown-options" value="Student can't hear tutor">Student can't hear tutor </option>
+                    <option class="dropdown-options" value="Sound dropped once">Sound dropped once </option>
+                    <option class="dropdown-options" value="Sound dropping throughout">Sound dropping throughout
+                    </option>
+                    <option class="dropdown-options" value="Initial problem">Initial problem </option>
+                    <option class="dropdown-options" value="All good">All good </option>
+                </select>
+            </div>
+            <br>
+
+            <div>
+                <label class="tech-label-background" style="width: 170px;">
+                    AUDIO CONNECTION
+                </label>
+
+                <select name="select connection status" class="select-dropdown">
+                    <option class="dropdown-options" value="select connection status">Select connection status</option>
+                    <option class="dropdown-options" value="Student voice too low">Student voice too low</option>
+                    <option class="dropdown-options" value="High background noise">High background noise</option>
+                    <option class="dropdown-options" value="All good">All good</option>
+                </select>
+
+            </div>
+
+            <br>
+            <div>
+                <div>
+
+                    <label class="tech-label-background" style="width: 170px;">
+                        WORKSPACE STATUS
+                    </label>
+                    <select name="select workspace status" class="select-dropdown">
+                        <option class="dropdown-options" value="select workspace status">Select workspace status
+                        </option>
+                        <option class="dropdown-options" value="Student unable to use tools">Student unable to use tools
+                        </option>
+                        <option class="dropdown-options" value="Unable to see annotations">Unable to see annotations
+                        </option>
+                        <option class="dropdown-options" value="All good">All good</option>
+                        <option class="dropdown-options" value="Student unable to see slides">Student unable to see
+                            slides</option>
+                        <option class="dropdown-options" value="Not available">Not available</option>
+                    </select>
+                </div>
+                <br>
+
+
+                <div>
+                    <label class="tech-label-background" style="width: 320px;">
+                        TIME LOST TO AUDIO ISSUE DURING SESSION
+                    </label>
+                    <select name="select time lost" class="select-dropdown">
+                        <option class="dropdown-options" value="select time lost"> Select amount of time lost </option>
+                        <option class="dropdown-options" value="0-5 mins"> 0-5 mins </option>
+                        <option class="dropdown-options" value="6-15 mins"> 6-15 mins </option>
+                        <option class="dropdown-options" value="16-25 mins"> 16-25 mins </option>
+                        <option class="dropdown-options" value="26-35 mins"> 26-35 mins </option>
+                        <option class="dropdown-options" value="36-45 
+                        mins"> 36-45 mins </option>
+                    </select>
+                </div>
+                <br>
+
+                <div>
+                    <label class="tech-label-background" style="width: 120px; min-height: 120px;">
+                        TECH NOTES
+                    </label>
+                    <input type="text" class="select-dropdown" style="width: 250px; min-height: 120px;">
+                </div>
+
+            </div>
+            <br>
+        </div>
+
+
+
+        <!--------------------------------------Internal/session feedback----------------------------------------->
+
+
+
+        <div>
+            <div>
+                <div class="title-feedback">
+                    Internal/session feedback
+                </div>
+                <br>
+                <div>
+                    <label class="tech-label-background" style="width: 300px; min-height: 140px;">
+                        ANY OTHER INTERNAL NOTES ON SESSION?
+                    </label>
+                    <Input type="text" class="select-dropdown" style="width: 320px; min-height: 140px;">
+                </div>
+            </div>
+            <br>
+            <div>
+                How happy were you with your teaching?
+            </div>
+            <br>
+            <div class="stars">
+                <img src="https://app.thirdspacelearning.com/assets/star-18cf44bd9154ae953e02ecabe456c4e9ee3555e0c918dcfcbbee736c9745dc56.png"
+                    alt="star">
+                <img src="https://app.thirdspacelearning.com/assets/star-18cf44bd9154ae953e02ecabe456c4e9ee3555e0c918dcfcbbee736c9745dc56.png"
+                    alt="star">
+                <img src="https://app.thirdspacelearning.com/assets/star-18cf44bd9154ae953e02ecabe456c4e9ee3555e0c918dcfcbbee736c9745dc56.png"
+                    alt="star">
+                <img src="https://app.thirdspacelearning.com/assets/star-18cf44bd9154ae953e02ecabe456c4e9ee3555e0c918dcfcbbee736c9745dc56.png"
+                    alt="star">
+
+            </div>
+
+
+            <div>
+                <label class="tech-label-background" style="width: 320px; min-height: 120px;">
+                    WHAT WOULD YOU IMPROVE FOR NEXT TIME?
+                </label>
+                <Input type="text" class="select-dropdown" style="width: 250px; min-height: 120px;">
+            </div>
+            <br>
+
+            <div class="red-flag">
+                Red Flag
+            </div>
+
+            <button type="button" class="btn btn-primary first-button"
+                style="--bs-btn-padding-y: .5rem; --bs-btn-padding-x: 2.5rem; --bs-btn-font-size: 0.8rem;">
+                Add Red Flag
+            </button>
+
+            <br>
+            <button type="button" class="btn btn-primary second-button"
+                style="--bs-btn-padding-y: .5rem; --bs-btn-padding-x: 2.5rem; --bs-btn-font-size: 0.8rem;">
+                OK, I am done
+            </button>
+        </div>
+
+
+
+
+    </form>
+
+    </html>
+
+
+
+</body>
+
+<div class="footer-head">
+
+</div>
+<div>
+    <img src="footer.png" alt="footer">
+</div>
+
+</html>
